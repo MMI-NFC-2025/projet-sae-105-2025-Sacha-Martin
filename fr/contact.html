@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: rgb(1, 8, 19);">
+    <header class="header">
+        <a href="/fr/index.html">
+            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </a>
+        <button class="header__langue">EN</button>
+        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
+        <nav class="menu">
+            <header class="menu__header">
+                <span class="header__text">Menu</span>
+                <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
+            </header>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/fr/article1.html">La théorie de la parité</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article2.html">La vérité sur la théorie</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Les femmes de sciences dans
+                        lalittérature</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article4.html">L’effet Mathilda : Invisibilité
+                        des femmes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les nouveaux moyens de
+                        réhabilitation</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article6.html">Galerie de film et série</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="about__content">
+            <h1 class="about__title">
+                CONTACT
+            </h1>
+            <div class="contact__wrapper">
+                <form class="contact__form">
+                    <div class="contact__name-wrapper">
+                        <div class="contact__firstname-wrapper">
+                            <label for="firstname" class="contact__label">Prénom</label><br>
+                            <input type="text" id="firstname" class="contact__input">
+                        </div>
+                        <div class="contact__lastname-wrapper">
+                            <label for="lastname" class="contact__label">Nom</label><br>
+                            <input type="text" id="lastname" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__email-wrapper">
+                        <label for="email" class="contact__label">E-mail</label><br>
+                        <input type="text" id="email" class="contact__input">
+                    </div>
+                    <div class="contact__message-wrapper">
+                        <label for="message" class="contact__label">Message</label><br>
+                        <input type="text" id="message" class="contact__input">
+                    </div>
+                    <button class="contact__submit-btn" type="submit">Envoyer</button>
+                </form>
+            </div>
+            <section class="logo">
+                <a class="logo__link" href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">
+                    <img class="logo__img" src="/assets/img/logo/logommi.svg" alt="logo ForParity">
+                </a>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="footer__links">
+            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
+            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
+            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
+            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
+        </ul>
+        <span class="footer__text">Projet achevé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
+            Montbéliard.</span>
+        <address class="footer__contact-detail">
+            <p class="contact-detail__name">Sacha MARTIN</p>
+            <p class="contact-detail__promo">MMI 1 - C1</p>
+            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                sacha.martin03@edu.univ-fcomte.fr
+            </a>
+        </address>
+    </footer>
+</body>
+</html>

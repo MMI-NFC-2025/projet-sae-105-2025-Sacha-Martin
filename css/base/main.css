@@ -1,0 +1,7 @@
+body {
+  color : #ffffff;
+}
+
+ul{
+  list-style-image: url(/assets/img/logo/logo-list-menu.svg);
+}

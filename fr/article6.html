@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: rgb(1, 8, 19);">
+    <header class="header">
+        <a href="/fr/index.html">
+            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </a>
+        <button class="header__langue">EN</button>
+        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
+        <nav class="menu">
+            <header class="menu__header">
+                <span class="header__text">Menu</span>
+                <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
+            </header>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/fr/article1.html">La théorie de la parité</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article2.html">La vérité sur la théorie</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Les femmes de sciences dans
+                        lalittérature</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article4.html">L’effet Mathilda : Invisibilité
+                        des femmes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les nouveaux moyens de
+                        réhabilitation</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article6.html">Galerie de film et série</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="galery">
+            <h1 class="galery__title">Galerie de film et série</h1>
+            <section class="galery__film">
+                <h2 class="galery__film-title">Films</h2>
+                <div class="carousel__wrapper" src="assets/img/artist/ibrahim-maalouf2.avif">
+                    <button class="carousel__button carousel__button--prev">
+                        <img src="/assets/img/logo/flèche-haut.svg" alt="bouton defilement gauche galerie photo">
+                    </button>
+                    <div class="carousel__galery carousel__galery--films">
+                        <div class="carousel__item item__film1">
+                            <h2 class="item__title">Les Figures De L’ombre</h2>
+                            <img class="item__img" src="/assets/img/img/carousel/film/item1.avif"
+                                alt="affiche film les figures de l'ombre">
+                            <div class="item__description">
+                                <span class="description__highlight">
+                                    Femmes mises en avant : Katherine Johnson, Dorothy Vaughan, Mary Jackson
+                                </span>
+                                <p class="text__resume">
+                                    Résumé : Trois mathématiciennes afro-américaines cruciales pour la conquête spatiale
+                                    américaine dans les années 1960,
+                                    restées dans l’ombre de leurs collègues masculins.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel__item item__film2">
+                            <h2 class="item__title">Radioactive</h2>
+                            <img class="item__img" src="/assets/img/img/carousel/film/item2.avif"
+                                alt="affiche film les figures de l'ombre">
+                            <div class="item__description">
+                                <span class="description__highlight">
+                                    Femmes mises en avant : Marie Curie
+                                </span>
+                                <p class="text__resume">
+                                    Résumé : Portrait de la double prix Nobel, racontant sa vie, ses découvertes et les
+                                    résistances qu’elle a affrontées
+                                    dans un milieu scientifique masculin.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel__item item__film3">
+                            <h2 class="item__title">Picture A Scientist</h2>
+                            <img class="item__img" src="/assets/img/img/carousel/film/item1.avif"
+                                alt="affiche film les figures de l'ombre">
+                            <div class="item__description">
+                                <span class="description__highlight">
+                                    Femmes mises en avant : Nancy Hopkins, Raychelle Burks, Jane Willenbring.
+                                </span>
+                                <p class="text__resume">
+                                    Résumé : Le documentaire Picture a Scientist suit trois chercheuses confrontées au
+                                    sexisme dans le milieu scientifique.
+                                    Le film dénonce ces discriminations et appelle à une science plus équitable et
+                                    inclusive.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="carousel__button carousel__button--next">
+                            <img class="carousel__button" src="/assets/img/logo/flèche-haut.svg"
+                                alt="bouton defilement gauche galerie photo">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="galery__serie">
+                <h2 class="galery__serie-title">Séries</h2>
+                <div class="carousel__wrapper">
+                    <button class="carousel__button carousel__button--prev">
+                        <img src="/assets/img/logo/flèche-haut.svg" alt="bouton defilement gauche galerie photo">
+                    </button>
+                    <div class="carousel__galery carousel__galery--series">
+                        <div class="carousel__item item__serie1">
+                            <h2 class="item__title">Mrs America</h2>
+                            <img class="item__img" src="/assets/img/img/carousel/serie/item1.avif"
+                                alt="affiche film les figures de l'ombre">
+                            <div class="item__description">
+                                <span class="description__highlight">
+                                    Femmes mises en avant : Katherine Johnson, Dorothy Vaughan, Mary Jackson
+                                </span>
+                                <p class="text__resume">
+                                    Résumé : Trois mathématiciennes afro-américaines cruciales pour la conquête spatiale
+                                    américaine dans les années 1960,
+                                    restées dans l’ombre de leurs collègues masculins.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel__item item__serie2">
+                            <h2 class="item__title">Call The Midwife</h2>
+                            <img class="item__img" src="/assets/img/img/carousel/serie/item2.avif"
+                                alt="affiche film les figures de l'ombre">
+                            <div class="item__description">
+                                <span class="description__highlight">
+                                    Femmes mises en avant : Marie Curie
+                                </span>
+                                <p class="text__resume">
+                                    Résumé : Portrait de la double prix Nobel, racontant sa vie, ses découvertes et les
+                                    résistances qu’elle a affrontées
+                                    dans un milieu scientifique masculin.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="carousel__button carousel__button--next">
+                            <img class="carousel__button" src="/assets/img/logo/flèche-haut.svg"
+                                alt="bouton defilement gauche galerie photo">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="footer__links">
+            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
+            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
+            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
+            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
+        </ul>
+        <span class="footer__text">Projet achevé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
+            Montbéliard.</span>
+        <address class="footer__contact-detail">
+            <p class="contact-detail__name">Sacha MARTIN</p>
+            <p class="contact-detail__promo">MMI 1 - C1</p>
+            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                sacha.martin03@edu.univ-fcomte.fr
+            </a>
+        </address>
+    </footer>
+</body>
+
+</html>
