@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 11px;
+}
+
+.header__part-right {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.header__logo{
+    margin-top: 17px;
+    width: 99px;
+    height: 24px;
+}
+
+.header__btn-menu{
+    margin-top: 11px;
+    background-color: transparent;
+    border: none;
+}
+
+.header__langue{
+    margin-top: 19px;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 25px;
+}

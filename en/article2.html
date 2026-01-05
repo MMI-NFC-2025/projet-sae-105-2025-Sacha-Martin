@@ -14,14 +14,14 @@
     <script src="script.js"></script>
 </head>
 
-<body style="background-color: rgb(1, 8, 19);">
+<body>
     <header class="header">
         <a href="/en/index.html">
             <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
         </a>
         <button class="header__langue">FR</button>
         <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
-        <nav class="menu">
+        <nav class="menu" hidden>
             <header class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
@@ -42,7 +42,9 @@
     </header>
     <main>
         <section class="hero hero2">
-            <h1 class="hero__title">The Truth about the theory : Chien-Shiung Wu and broken symmetry</h1>
+            <div class="hero__wrapper">
+                <h1 class="hero__title">The theory of parity: when nature looks in the mirror</h1>
+            </div>
             <div class="swipe">
                 <span class="swipe__text">
                     Discover the article

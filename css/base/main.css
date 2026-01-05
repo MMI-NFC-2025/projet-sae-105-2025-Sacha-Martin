@@ -1,7 +1,46 @@
 body {
   color : #ffffff;
+  background-color: var(--primary);
+  font-family: var(--font);
 }
 
 ul{
   list-style-image: url(/assets/img/logo/logo-list-menu.svg);
+}
+
+h1 {
+  font-size: var(--title1);
+}
+
+p {
+  margin-block: 36px;
+}
+
+.article__content{
+  width: 71%;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 14.5%;
+}
+
+.article__image-wrapper{
+  width: 83%;
+  margin-left: 8.5%;
+}
+
+.article__image {
+  width: 83%;
+  height: 218px;
+}
+
+.article__image-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 10px;
+  width: 83%;
+}
+
+.glossaire-link {
+  color: var(--link);
 }

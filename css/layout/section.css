@@ -1,0 +1,24 @@
+.hero1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary)), url(../../../assets/img/img/hero/hero1.avif);
+    background-size: cover;
+}
+
+.hero2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary)), url(../../../assets/img/img/hero/hero2.avif);
+    background-size: cover;
+}
+
+.hero3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary)), url(../../../assets/img/img/hero/hero3.avif);
+    background-size: cover;
+}
+
+.hero4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary)), url(../../../assets/img/img/hero/hero4.avif);
+    background-size: cover;
+}
+
+.hero4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary)), url(../../../assets/img/img/hero/hero5.avif);
+    background-size: cover;
+}
