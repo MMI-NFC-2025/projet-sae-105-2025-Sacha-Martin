@@ -28,6 +28,7 @@
 .menu__link {
     color: var(--white);
     text-decoration: none;
+    width: 48%;
 }
 
 .menu__list {
@@ -38,6 +39,7 @@
 
 .menu__item {
     margin-bottom: 25px;
+    width: 78%;
 }
 
 .no-scroll{

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/src/js/script.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/fr/index.html">FR</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
+        <nav class="menu">
+            <div class="menu__header">
+                <button class="header__btn-menu">
+                    <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
+                </button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article1.html">The theory of parity</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article2.html">The Truth about the theory</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article3.html">Women of science in literature</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article4.html">The Mathilda effect: Invisibility
+                        of women</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article5.html">The new means of rehabilitation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article6.html">Film and series gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="contact__content">
+            <h1 class="contact__title">
+                Other Projects
+            </h1>
+            <div class="carousel-wrapper">
+                <div class="carousel__controls">
+                    <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+                        <img src="/assets/img/logo/arrow2.svg" alt="fleche gauche">
+                    </button>
+                    <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+                        <img src="/assets/img/logo/arrow1.svg" alt="fleche droite">
+                    </button>
+                </div>
+                <div class="carousel__container" role="region" aria-live="polite">
+                    <div class="carousel__item">
+                        <a class="autres-projets vignette-titre" href="">
+                            <img class="img__caroussel" src="/assets/img/img/carousel/other/autres-projets-01.avif"
+                                alt="Image Jocelyn Bell">
+                            <p class="texte__caroussel">Lise Meitner</p>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a class="autres-projets vignette-titre" href="https://margaret-hamilton.lola-brouart.fr/en/">
+                            <img class="img__caroussel" src="/assets/img/img/carousel/other/autres-projets-02.avif"
+                                alt="Image Margaret Hamilton">
+                            <p class="texte__caroussel">Margaret Hamilton</p>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a class="autres-projets vignette-titre" href="https://margaret-hamilton.lola-brouart.fr/en/">
+                            <img class="img__caroussel" src="/assets/img/img/carousel/other/autres-projets-03.avif"
+                                alt="Image Margaret Hamilton">
+                            <p class="texte__caroussel">Jocelyn Bell</p>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a class="autres-projets vignette-titre" href="https://margaret-hamilton.lola-brouart.fr/en/">
+                            <img class="img__caroussel" src="/assets/img/img/carousel/other/autres-projets-04.avif"
+                                alt="Image Margaret Hamilton">
+                            <p class="texte__caroussel">Rosalind Franklin</p>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a class="autres-projets vignette-titre" href="https://margaret-hamilton.lola-brouart.fr/en/">
+                            <img class="img__caroussel" src="/assets/img/img/carousel/other/autres-projets-05.avif"
+                                alt="Image Margaret Hamilton">
+                            <p class="texte__caroussel">Henrietta Swan Leavitt</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="footer__links">
+            <li class="footer__link link1"><a href="/en/glossaire.html">GLOSSARY</a></li>
+            <li class="footer__link link2"><a href="/en/contact.html">CONTACT</a></li>
+            <li class="footer__link link3"><a href="/en/about.html">ABOUT</a></li>
+            <li class="footer__link link4"><a href="/en/contact.html">OTHER PROJECT</a></li>
+        </ul>
+        <span class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
+            Montbéliard.</span>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
+    </footer>
+</body>
+</html>
