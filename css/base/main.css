@@ -70,3 +70,18 @@ a {
   justify-content: center;
   margin-block: 28px;
 }
+
+.article__button{
+  width: 50%;
+  background: none;
+  color: var(--text);
+  border-color: var(--link);
+  border-width: 3px;
+  border-radius: 5px;
+  margin-inline: 99px;
+  margin-bottom: var(--space-m);
+}
+
+.article__video{
+  margin-bottom : var(--space-m);
+}

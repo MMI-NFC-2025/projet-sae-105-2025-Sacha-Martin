@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     height: 100%;
     z-index: 12;
     transform: translateY(-100%);
@@ -45,13 +45,13 @@
 }
 
 .menu__list {
-    gap: var(--space-m);
+    gap: var(--space-s);
     font-size: var(--title1);
     margin-bottom: 200px;
 }
 
 .menu__item {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     width: 68%;
 }
 

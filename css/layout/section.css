@@ -263,6 +263,7 @@
 
 .carousel-wrapper {
     position: relative;
+    margin-bottom: var(--space-m);
 }
 
 .carousel__controls {
@@ -302,6 +303,10 @@
 
 .carousel__container::-webkit-scrollbar {
     display: none;
+}
+
+.img__caroussel{
+    border-radius: 15px;
 }
 
 .autres-projets{
