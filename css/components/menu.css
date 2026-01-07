@@ -15,14 +15,27 @@
     transform: translateY(0);
 }
 
+.menu__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 11px;
+    align-items: center;
+}
+
+.header__btn-menu{
+    margin-right: 11px;
+}
+
+.header__title {
+    font-size: 25px;
+}
+
 .header__close{
     background-color: transparent;
     border: none;
     width: 100%;
     height: auto;
-    margin-top: 17px;
-    margin-right: 24px;
-    margin-left: 345px;
+    
 }
 
 .menu__link {
