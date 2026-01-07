@@ -11,21 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <a href="/en/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <button class="header__langue">FR</button>
-        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">FR</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
         <nav class="menu" hidden>
-            <header class="menu__header">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/en/article1.html">The theory of parity</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/article2.html">The Truth about the theory</a>
@@ -42,28 +48,28 @@
     </header>
     <main>
         <section class="hero hero2">
-            <div class="hero__wrapper">
-                <h1 class="hero__title">The theory of parity: when nature looks in the mirror</h1>
-            </div>
+            <h1 class="hero__title">The theory of parity: when nature looks in the mirror</h1>
             <div class="swipe">
                 <span class="swipe__text">
                     Discover the article
                 </span>
-                <img class='swipe__arrow' href="#top" src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                <a class="swipe__link" href="#top">
+                    <img class='swipe__arrow' src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                </a>
             </div>
         </section>
-        <article class="article">
+        <div class="article">
             <section class="article__intro">
                 <h2 class="article__chapo">
                     The «Mathilda effect» refers to the tendency to minimize or erase women's contributions in science,
                     for the benefit of their male colleagues.
                 </h2>
                 <div class="article__info">
-                    <p class="article__auteur">Par Sacha MARTIN</p>
-                    <span class="article__date" By Sacha Martin</p>
-                        <span class="article__date">On 10/20/2025 - 2 min of reading
+                    <p class="article__date">By Sacha Martin</p>
+                    <span class="article__date">On 10/20/2025 - 2 min of reading</span>
+                </div>
             </section>
-            <section class="article__content">
+            <div class="article__content">
                 <p class="article__text">
                     Longtemps passé sous silence, ce phénomène est aujourd’hui réexaminé à la lumière des nouveaux
                     outils de reconnaissance
@@ -89,13 +95,13 @@
                     film et de série
                     retraçant, des histoires de femmes invisibilisés
                 </p>
-            </section>
+            </div>
             <button class="article__button">Access the Gallery → </button>
-            <section class="article__image-wrapper">
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article5-img1.avif" alt="Chien Shiung Wu">
                 <span class="article__image-text">Poster for the documentary Picture a scientist</span>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__content">
                 <p class="article__text">
                     The documentary Picture a Scientist is a striking example: broadcast on several digital platforms,
                     it tells the story of women scientists facing invisibility and discrimination in the academic
@@ -106,58 +112,59 @@
                 <p class="article__text">
                     You will find below the trailer of the documentary:
                 </p>
-                <video class="article__video" src="/assets/video/Picture A Scientist - Official Trailer_1080p.mp4"
-                    controls></video>
-            </section>
-            <section class="article__image-wrapper">
+                <video class="article__video" src="/assets/video/trailer.mp4" controls></video>
+            </div>
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article5-img2.avif" alt="Chien Shiung Wu">
-                <span class="article__image-text">Portrait de femmes pionnières qui ont marqué l’histoire des sciences
-                    et de la technologie.</span>
-            </section>
-            <section class="article__content">
+                <span class="article__image-text">Portrait of pioneering women who have marked the history of
+                    science and technology.</span>
+            </div>
+            <div class="article__content">
                 <p class="article__text">
-                    <span class="article__image-text">Portrait of pioneering women who have marked the history of
-                        science and technology.</span>
-                    d’égalité dans la recherche et la publication, il contribue à corriger une histoire écrite au
-                    masculin.
+                    Law, too, is emerging as a new instrument of symbolic reparation. By promoting policies of equality
+                    in research and
+                    publication, it contributes to correcting a history written in the masculine.
                 </p>
                 <p class="article__text">
-                    Les lois sur la parité dans les instances scientifiques, les prix réservés aux chercheuses ou la
-                    révision des protocoles
-                    d’attribution de brevets participent de cette dynamique.
+                    Laws on parity in scientific bodies, prizes reserved for female researchers or the revision of
+                    patent allocation
+                    protocols are part of this dynamic.
                 </p>
                 <p class="article__text">
-                    Réhabiliter ne consiste plus seulement à redécouvrir des figures oubliées, mais à transformer en
-                    profondeur les
-                    mécanismes de la reconnaissance scientifique.
+                    Rehabilitating is no longer just about rediscovering forgotten figures, but to deeply transform the
+                    mechanisms of
+                    scientific recognition.
                 </p>
                 <p class="article__text">
-                    En donnant leur juste place aux femmes, la société ne corrige pas seulement une injustice passée :
-                    elle enrichit le
-                    présent d’une pluralité de voix, d’expériences et de savoirs essentiels pour penser le futur.
+                    By giving women their rightful place, society does not only correct a past injustice: it enriches
+                    the present with a
+                    plurality of voices, experiences and knowledge essential for thinking about the future.
                 </p>
-            </section>
-        </article>
+            </div>
+        </div>
         <a class="arrow-up__link" href="#top">
             <img class="arrow-up__img" src="/assets/img/logo/flèche-haut.svg" alt="fleche qui remonte vers le haut">
         </a>
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
-            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
-            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
-            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
-        </ul>en/glossaire.html">GLOSSARY</li>
-        <li class="footer__link" href="/en/contact.html">CONTACT</li>
-        <li class="footer__link" href="/en/about.html">ABOUT</li>
-        <li class="footer__link" href="/en/contact.html">OTHER PROJECT</li>
+            <li class="footer__link link1"><a href="/en/glossaire.html">GLOSSARY</a></li>
+            <li class="footer__link link2"><a href="/en/contact.html">CONTACT</a></li>
+            <li class="footer__link link3"><a href="/en/about.html">ABOUT</a></li>
+            <li class="footer__link link4"><a href="/en/contact.html">OTHER PROJECT</a></li>
         </ul>
         <span class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
+            Montbéliard.</span>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
             </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
 </body>
 

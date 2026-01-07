@@ -11,21 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/fr/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <button class="header__langue">EN</button>
-        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
-        <nav class="menu" hidden>
-            <header class="menu__header">
+    <header class="header" aria-hidden="false">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">EN</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/fr/article1.html">La théorie de la parité</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/article2.html">La vérité sur la théorie</a></li>
@@ -46,89 +52,110 @@
                 <span class="swipe__text">
                     Découvrez l'article
                 </span>
-                <img class='swipe__arrow' href="#top" src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                <a class="swipe__link" href="#top">
+                    <img class='swipe__arrow' src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                </a>
             </div>
         </section>
-        <article class="article">
+        <div class="article">
             <section class="article__intro">
                 <h2 class="article__chapo">
-                    Chien-Shiung Wu, physicienne sino-américaine d’un talent exceptionnel, est souvent surnommée « la première dame de la
-                    physique ». Son parcours, marqué par une détermination qui l’a menée à des contributions fondamentales
+                    Chien-Shiung Wu, physicienne sino-américaine d’un talent exceptionnel, est souvent surnommée « la
+                    première dame de la
+                    physique ». Son parcours, marqué par une détermination qui l’a menée à des contributions
+                    fondamentales
                 </h2>
                 <div class="article__info">
                     <p class="article__auteur">Par Sacha MARTIN</p>
                     <span class="article__date">Le 20/10/2025 - 2 min de lecture</span>
                 </div>
             </section>
-            <section class="article__content">
+            <div class="article__content">
                 <p class="article__text">
-                    Au cœur des années 1950, elle a joué un rôle essentiel dans la vérification expérimentale d’une idée révolutionnaire :
-                    la violation de la loi de parité. Cette expérience n’était pas seulement une prouesse technique, mais une remise en
+                    Au cœur des années 1950, elle a joué un rôle essentiel dans la vérification expérimentale d’une idée
+                    révolutionnaire :
+                    la violation de la loi de parité. Cette expérience n’était pas seulement une prouesse technique,
+                    mais une remise en
                     question audacieuse d’un principe longtemps considéré comme universel.
                 </p>
-            </section>
-            <section class="article__image-wrapper">
+            </div>
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article2-img1.avif" alt="Chien Shiung Wu">
                 <span class="article__image-text">Chien Shiung Wu entourée d'étudiants lors d'une conférence.</span>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__content">
                 <p class="article__text">
-                    Cependant, grâce à l’expérience méticuleuse menée par Chien-Shiung Wu, une vérité surprenante a été mise en lumière. En
-                    étudiant la désintégration bêta du <a href="/fr/glossaire.html#7">cobalt-60</a> à très basse température, Wu a démontré de manière irréfutable que cette
+                    Cependant, grâce à l’expérience méticuleuse menée par Chien-Shiung Wu, une vérité surprenante a été
+                    mise en lumière. En
+                    étudiant la désintégration bêta du <a href="/fr/glossaire.html#7">cobalt-60</a> à très basse
+                    température, Wu a démontré de manière irréfutable que cette
                     symétrie n’était pas universelle.
                 </p>
                 <p class="article__text">
-                    Elle a découvert que, pour l’interaction faible, la symétrie gauche-droite pouvait être brisée. Les électrons émis lors
-                    de la désintégration montraient une direction préférentielle, contredisant directement le principe de conservation de la
+                    Elle a découvert que, pour l’interaction faible, la symétrie gauche-droite pouvait être brisée. Les
+                    électrons émis lors
+                    de la désintégration montraient une direction préférentielle, contredisant directement le principe
+                    de conservation de la
                     parité.
                 </p>
-                <section class="article__image-wrapper">
-                    <img class="article__image" src="/assets/img/img/article2-img2.avif" alt="Chien Shiung Wu">
-                    <span class="article__image-text">Chien-Shiung Wu assemble un générateur électrostatique dans le laboratoire.</span>
-                </section>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__image-wrapper">
+                <img class="article__image" src="/assets/img/img/article2-img2.avif" alt="Chien Shiung Wu">
+                <span class="article__image-text">Chien-Shiung Wu assemble un générateur électrostatique dans le
+                    laboratoire.</span>
+            </div>
+            <div class="article__content">
                 <p class="article__text">
-                    Cette découverte a eu un impact colossal, bouleversant les fondements de la physique moderne. Elle a non seulement
-                    confirmé l’hypothèse audacieuse des théoriciens Tsung-Dao Lee et Chen-Ning Yang, mais a également forcé les physiciens à
+                    Cette découverte a eu un impact colossal, bouleversant les fondements de la physique moderne. Elle a
+                    non seulement
+                    confirmé l’hypothèse audacieuse des théoriciens Tsung-Dao Lee et Chen-Ning Yang, mais a également
+                    forcé les physiciens à
                     reconsidérer leurs modèles de l’univers.
                 </p>
                 <p class="article__text">
-                    Pourtant, malgré l’importance capitale de son travail expérimental, ce sont Lee et Yang qui furent honorés du prix Nobel
-                    de physique en 1957 pour leur proposition théorique – sans que Chien-Shiung Wu ne soit mentionnée, alors que son
+                    Pourtant, malgré l’importance capitale de son travail expérimental, ce sont Lee et Yang qui furent
+                    honorés du prix Nobel
+                    de physique en 1957 pour leur proposition théorique – sans que Chien-Shiung Wu ne soit mentionnée,
+                    alors que son
                     expérience avait fourni la preuve empirique indispensable.
                 </p>
                 <p class="article__text">
-                    Son travail fut longtemps sous-estimé et sa contribution, bien que reconnue par ses pairs, ne reçut pas la pleine
+                    Son travail fut longtemps sous-estimé et sa contribution, bien que reconnue par ses pairs, ne reçut
+                    pas la pleine
                     reconnaissance qu’elle méritait.
                 </p>
                 <p class="article__text">
-                    Néanmoins, l’héritage de Chien-Shiung Wu demeure aujourd’hui un symbole puissant de rigueur scientifique, de
-                    persévérance et de justice pour les femmes en science. Sa vie et son œuvre continuent d’inspirer les générations futures
+                    Néanmoins, l’héritage de Chien-Shiung Wu demeure aujourd’hui un symbole puissant de rigueur
+                    scientifique, de
+                    persévérance et de justice pour les femmes en science. Sa vie et son œuvre continuent d’inspirer les
+                    générations futures
                     de scientifiques.
                 </p>
-            </section>
-        </article>
+            </div>
+        </div>
         <a class="arrow-up__link" href="#top">
             <img class="arrow-up__img" src="/assets/img/logo/flèche-haut.svg" alt="fleche qui remonte vers le haut">
         </a>
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
-            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
-            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
-            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
+            <li class="footer__link"><a href="/fr/glossaire.html">GLOSSAIRE</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">CONTACT</a></li>
+            <li class="footer__link"><a href="/fr/about.html">À PROPOS</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">AUTRES PROJET</a></li>
         </ul>
         <span class="footer__text">Projet achevé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
             Montbéliard.</span>
-        <address class="footer__contact-detail">
-            <p class="contact-detail__name">Sacha MARTIN</p>
-            <p class="contact-detail__promo">MMI 1 - C1</p>
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
-        </address>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
 </body>
 

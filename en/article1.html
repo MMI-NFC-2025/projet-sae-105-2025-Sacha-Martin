@@ -11,25 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <a href="/en/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <div class="header__part-right">
-            <button class="header__langue">FR</button>
-            <button class="header__btn-menu">
-                <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
-            </button>
-        </div>
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">FR</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
         <nav class="menu" hidden>
-            <header class="menu__header">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/en/article1.html">The theory of parity</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/article2.html">The Truth about the theory</a>
@@ -46,17 +48,17 @@
     </header>
     <main>
         <section class="hero hero1">
-            <div class="hero__wrapper">
-                <h1 class="hero__title">The theory of parity: when nature looks in the mirror</h1>
-            </div>
+            <h1 class="hero__title">The theory of parity: when nature looks in the mirror</h1>
             <div class="swipe">
                 <span class="swipe__text">
                     Discover the article
                 </span>
-                <img class='swipe__arrow' href="#top" src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                <a class="swipe__link" href="#top">
+                    <img class='swipe__arrow' src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                </a>
             </div>
         </section>
-        <article class="article">
+        <div class="article">
             <section class="article__intro">
                 <h2 class="article__chapo">
                     What if nature does not perfectly reflect its image in a mirror? <a class="glossaire-link"
@@ -68,7 +70,7 @@
                     <span class="article__date">On 10/20/2025 - 2 min of reading</span>
                 </div>
             </section>
-            <section class="article__content">
+            <div class="article__content">
                 <p class="article__text">
                     For a long time, physicists believed that nature did not make a difference between left and right.
                     This idea of <a class="glossaire-link" href="/en/glossaire.html#2">spatial symmetry</a> seemed
@@ -79,13 +81,13 @@
                     <a class="glossaire-link" href="/en/glossaire.html#3">Parity</a> then embodied a fundamental
                     harmony, a vision of order and balance at the heart of science.
                 </p>
-            </section>
-            <section class="article__image-wrapper">
+            </div>
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article1-img1.avif" alt="Chien Shiung Wu">
                 <span class="article__image-text">Shiung-Wu dog in full scientific experimentation, symbol of the women
                     who contributed decisively.</span>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__content">
                 <p class="article__text">
                     But in 1956, two Chinese theorists, Tsung-Dao Lee and Chen-Ning Yang, dared to question this
                     conviction. They proposed that the <a class="glossaire-link" href="/en/glossaire.html#4">weak
@@ -96,12 +98,12 @@
                     To verify this bold idea, the physicist Chien-Shiung Wu conducted a historical experiment. Its
                     results were clear: in some interactions, nature violates parity.
                 </p>
-                <section class="article__image-wrapper">
-                    <img class="article__image" src="/assets/img/img/article1-img2.avif" alt="Chien Shiung Wu">
-                    <span class="article__image-text">The male scientific team rewarded for the theory.</span>
-                </section>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__image-wrapper">
+                <img class="article__image" src="/assets/img/img/article1-img2.avif" alt="Chien Shiung Wu">
+                <span class="article__image-text">The male scientific team rewarded for the theory.</span>
+            </div>
+            <div class="article__content">
                 <p class="article__text">
                     This discovery caused a real scientific upheaval. She revealed that the universe indeed
                     distinguishes left from right, breaking the idea of a perfect and universal symmetry. Parity, once a
@@ -112,32 +114,32 @@
                     that knowledge advances thanks to doubt, and that even the most established truths can be reversed
                     under the critical gaze of science.
                 </p>
-            </section>
-        </article>
+            </div>
+        </div>
         <a class="arrow-up__link" href="#top">
             <img class="arrow-up__img" src="/assets/img/logo/flèche-haut.svg" alt="fleche qui remonte vers le haut">
         </a>
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/en/glossaire.html">GLOSSARY</li>
-            <li class="footer__link" href="/en/contact.html">CONTACT</li>
-            <li class="footer__link" href="/en/about.html">ABOUT</li>
-            <li class="footer__link" href="/en/contact.html">OTHER PROJECT</li>
+            <li class="footer__link link1"><a href="/en/glossaire.html">GLOSSARY</a></li>
+            <li class="footer__link link2"><a href="/en/contact.html">CONTACT</a></li>
+            <li class="footer__link link3"><a href="/en/about.html">ABOUT</a></li>
+            <li class="footer__link link4"><a href="/en/contact.html">OTHER PROJECT</a></li>
         </ul>
         <span class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
             Montbéliard.</span>
-        <address class="footer__contact-detail">
-            <p class="contact-detail__name">Sacha MARTIN</p>
-            <p class="contact-detail__promo">MMI 1 - C1</p>
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
-        </address>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
-</body>
-
-</html>
 </body>
 
 </html>

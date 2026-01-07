@@ -1,0 +1,78 @@
+.footer {
+    width: 100%;
+    height: 158px;
+    background: linear-gradient(180deg, var(--detail-1) 0%, var(--detail-2) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.footer__links {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 13.79px;
+    padding-top: 26px;
+    list-style: none;
+    text-align: center;
+    font-size: var(--footer-text);
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text);
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+
+.footer__link a {
+    color: var(--text);
+    margin-bottom: 0;
+}
+
+
+.footer__text {
+    width: 85.5%;
+    height: 30px;
+    margin-block: 24px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer__contact-wrapper {
+    width: 85.5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer__contact-detail {
+    text-align: left;
+    font-size: var(--footer-detail);
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.contact-detail__name {
+    margin-block: 0;
+}
+
+.contact-detail__promo {
+    margin-block: 0;
+}
+
+.contact-detail__mail {
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.contact__logo {
+    width: 24%;
+    height: 23px;
+    aspect-ratio: 95/23;
+}

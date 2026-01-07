@@ -11,21 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/fr/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <button class="header__langue">EN</button>
-        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
-        <nav class="menu" hidden>
-            <header class="menu__header">
+    <header class="header" aria-hidden="false">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">EN</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/fr/article1.html">La théorie de la parité</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/article2.html">La vérité sur la théorie</a></li>
@@ -44,9 +50,9 @@
             <h1 class="about__title">
                 GLOSSAIRE
             </h1>
-            <section class="glossaire__list">
+            <div class="glossaire__list">
                 <div class="list">
-                    <h2 class="list_title">1. Science et physique</h2>
+                    <h2 class="list__title">1. Science et physique</h2>
                     <ul class="list__wrapper">
                         <li class="list__item" id="1">
                             <p class="item__text"><strong class="text__strong">Théorie de la parité :</strong> principe
@@ -77,7 +83,7 @@
                     </ul>
                 </div>
                 <div class="list">
-                    <h2 class="list_title">2. Femmes et histoire des sciences</h2>
+                    <h2 class="list__title">2. Femmes et histoire des sciences</h2>
                     <ul class="list__wrapper">
                         <li class="list__item" id="10">
                             <p class="item__text"><strong class="text__strong">Effet Mathilda (ou Matilda)
@@ -101,7 +107,7 @@
                     </ul>
                 </div>
                 <div class="list">
-                    <h2 class="list_title">3. Droit et société</h2>
+                    <h2 class="list__title">3. Droit et société</h2>
                     <ul class="list__wrapper">
                         <li class="list__item" id="3">
                             <p class="item__text"><strong class="text__strong">Parité :</strong> principe d’égalité de
@@ -121,7 +127,7 @@
                     </ul>
                 </div>
                 <div class="list">
-                    <h2 class="list_title">4. Culture et mémoire</h2>
+                    <h2 class="list__title">4. Culture et mémoire</h2>
                     <ul class="list__wrapper">
                         <li class="list__item">
                             <p class="item__text"><strong class="text__strong">Transmission intellectuelle :</strong>
@@ -140,24 +146,28 @@
                         </li>
                         <li class="list__item" id="12">
                             <p class="item__text"><strong class="text__strong">Base de données collaborative :</strong>
-                                outil numérique permettant de recenser et partager des informations sur des figures scientifiques.
+                                outil numérique permettant de recenser et partager des informations sur des figures
+                                scientifiques.
                             </p>
                         </li>
                     </ul>
                 </div>
                 <div class="list">
-                    <h2 class="list_title">5. Références et citations</h2>
+                    <h2 class="list__title">5. Références et citations</h2>
                     <ul class="list__wrapper">
                         <li class="list__item" id="11">
                             <p class="item__text"><strong class="text__strong">Catherine Puigelier :</strong>
-                                juriste française, autrice de L’effet Mathilda : Invisibilité des femmes dans les sciences et rôle du droit.</p>
+                                juriste française, autrice de L’effet Mathilda : Invisibilité des femmes dans les
+                                sciences et rôle du droit.</p>
                         </li>
                         <li class="list__item">
                             <p class="item__text"><strong class="text__strong">Françoise Héritier :</strong>
-                                anthropologue française, connue pour ses travaux sur les rapports entre les sexes et les structures de la parenté.</p>
+                                anthropologue française, connue pour ses travaux sur les rapports entre les sexes et les
+                                structures de la parenté.</p>
                         </li>
                     </ul>
                 </div>
+            </div>
         </article>
         <a class="arrow-up__link" href="#top">
             <img class="arrow-up__img" src="/assets/img/logo/flèche-haut.svg" alt="fleche qui remonte vers le haut">
@@ -165,20 +175,23 @@
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
-            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
-            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
-            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
+            <li class="footer__link"><a href="/fr/glossaire.html">GLOSSAIRE</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">CONTACT</a></li>
+            <li class="footer__link"><a href="/fr/about.html">À PROPOS</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">AUTRES PROJET</a></li>
         </ul>
         <span class="footer__text">Projet achevé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
             Montbéliard.</span>
-        <address class="footer__contact-detail">
-            <p class="contact-detail__name">Sacha MARTIN</p>
-            <p class="contact-detail__promo">MMI 1 - C1</p>
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
-        </address>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
 </body>
 

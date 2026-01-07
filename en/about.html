@@ -11,21 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body style="background-color: rgb(1, 8, 19);">
     <header class="header">
-        <a href="/en/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <button class="header__langue">FR</button>
-        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">FR</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
         <nav class="menu">
-            <header class="menu__header">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/en/article1.html">The theory of parity</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/article2.html">The Truth about the theory</a>
@@ -45,7 +51,7 @@
             <h1 class="about__title">
                 ABOUT
             </h1>
-            <section class="about__text">
+            <div class="about__text">
                 <p class="text__content">
                     This site was created as part of a project by BUT MMI in Montbéliard. It explores the Mathilda
                     effect, this phenomenon that erases women from scientific history.
@@ -62,31 +68,33 @@
                     As Françoise Héritier said: "The phenomenon is so massive that it becomes invisible." Here, we
                     choose to make it visible.
                 </p>
-            </section>
-            <section class="logo">
-                <a class="logo__link"
-                    href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">
-                    <img class="logo__img" src="/assets/img/logo/logommi.svg" alt="logo ForParity">
-                </a>
-            </section>
+            </div>
         </article>
+        <div class="logo">
+            <a class="logo__link" href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">
+                <img class="logo__img" src="/assets/img/logo/logommi.svg" alt="logo ForParity">
+            </a>
+        </div>
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/en/glossaire.html">GLOSSARY</li>
-            <li class="footer__link" href="/en/contact.html">CONTACT</li>
-            <li class="footer__link" href="/en/about.html">ABOUT</li>
-            <li class="footer__link" href="/en/contact.html">OTHER PROJECT</li>
+            <li class="footer__link link1"><a href="/en/glossaire.html">GLOSSARY</a></li>
+            <li class="footer__link link2"><a href="/en/contact.html">CONTACT</a></li>
+            <li class="footer__link link3"><a href="/en/about.html">ABOUT</a></li>
+            <li class="footer__link link4"><a href="/en/contact.html">OTHER PROJECT</a></li>
         </ul>
         <span class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
             Montbéliard.</span>
-        <address class="footer__contact-detail">
-            <p class="contact-detail__name">Sacha MARTIN</p>
-            <p class="contact-detail__promo">MMI 1 - C1</p>
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
-        </address>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
 </body>
 

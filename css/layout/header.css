@@ -1,7 +1,18 @@
 .header {
+    justify-content: space-between;
+    margin-inline: 11px;
+    margin-bottom: 0;
+    align-items: center;
+    height: 57px;
+}
+
+.header__nav{
     display: flex;
     justify-content: space-between;
     margin-inline: 11px;
+    margin-bottom: 0;
+    align-items: center;
+    height: 57px;
 }
 
 .header__part-right {
@@ -11,21 +22,26 @@
 }
 
 .header__logo{
-    margin-top: 17px;
     width: 99px;
     height: 24px;
 }
 
 .header__btn-menu{
-    margin-top: 11px;
     background-color: transparent;
     border: none;
+    width: 39px;
+    height: 36px;
 }
 
 .header__langue{
-    margin-top: 19px;
     background-color: transparent;
     border: none;
     color: var(--text);
     font-size: 25px;
+}
+
+.header__nav[aria-expanded="true"] .header__logo {
+    opacity: 0;
+    visibility: visible;
+    height: 0;
 }

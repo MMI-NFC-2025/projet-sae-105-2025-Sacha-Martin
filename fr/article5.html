@@ -11,21 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js"></script>
+    <script src="/src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/fr/index.html">
-            <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
-        </a>
-        <button class="header__langue">EN</button>
-        <img class="header__menu" src="/assets/img/logo/menu.svg" alt="bouton menu">
-        <nav class="menu" hidden>
-            <header class="menu__header">
+    <header class="header" aria-hidden="false">
+        <nav class="header__nav" aria-expanded="false">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+            </a>
+            <div class="header__part-right">
+                <a class="header__langue" href="/en/index.html">EN</a>
+                <button class="header__btn-menu">
+                    <img class="btn-menu__img" src="/assets/img/logo/menu.svg" alt="bouton menu">
+                </button>
+            </div>
+        </nav>
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <div class="menu__header">
                 <span class="header__text">Menu</span>
                 <img class="header__close" src="/assets/img/logo/croix.svg" alt="bouton fermer menu">
-            </header>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/fr/article1.html">La théorie de la parité</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/article2.html">La vérité sur la théorie</a></li>
@@ -46,13 +52,16 @@
                 <span class="swipe__text">
                     Découvrez l'article
                 </span>
-                <img class='swipe__arrow' href="#top" src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                <a class="swipe__link" href="#top">
+                    <img class='swipe__arrow' src="/assets/img/logo/swipe-arrow.svg" alt="swip-up">
+                </a>
             </div>
         </section>
-        <article class="article">
+        <div class="article">
             <section class="article__intro">
                 <h2 class="article__chapo">
-                    L’« effet Mathilda » désigne la tendance à minimiser ou effacer les contributions des femmes dans la science, au profit
+                    L’« effet Mathilda » désigne la tendance à minimiser ou effacer les contributions des femmes dans la
+                    science, au profit
                     de leurs collègues masculins
                 </h2>
                 <div class="article__info">
@@ -60,86 +69,107 @@
                     <span class="article__date">Le 20/10/2025 - 2 min de lecture</span>
                 </div>
             </section>
-            <section class="article__content">
+            <div class="article__content">
                 <p class="article__text">
-                    Longtemps passé sous silence, ce phénomène est aujourd’hui réexaminé à la lumière des nouveaux outils de reconnaissance
-                    et de réhabilitation. À l’ère du numérique et de la conscience féministe accrue, la mémoire scientifique s’écrit
+                    Longtemps passé sous silence, ce phénomène est aujourd’hui réexaminé à la lumière des nouveaux
+                    outils de reconnaissance
+                    et de réhabilitation. À l’ère du numérique et de la conscience féministe accrue, la mémoire
+                    scientifique s’écrit
                     autrement.
                 </p>
                 <p class="article__text">
-                    Les initiatives se multiplient : bases de <a class="glossaire-link" href="glossaire.html#12">données collaboratives</a>, projets de recherche en histoire des sciences,
+                    Les initiatives se multiplient : bases de <a class="glossaire-link" href="glossaire.html#12">données
+                        collaboratives</a>, projets de recherche en histoire des sciences,
                     expositions et documentaires redonnent une voix à celles qu’on a oubliées.
                 </p>
                 <p class="article__text">
-                    Les universités, quant à elles, réévaluent les archives pour attribuer à certaines chercheuses la paternité — ou plutôt
-                    la maternité — d’inventions et de découvertes injustement spoliées. Le numérique joue ici un rôle central : les
-                    plateformes ouvertes permettent de diffuser largement ces savoirs réhabilités, tandis que les réseaux sociaux deviennent
-                    des espaces de transmission et de reconnaissance. La création et le développement du secteur du cinéma et des séries
-                    permettent de mettre en lumière certain cas important. Vous retrouverez ci-dessous une galerie de film et de série
+                    Les universités, quant à elles, réévaluent les archives pour attribuer à certaines chercheuses la
+                    paternité — ou plutôt
+                    la maternité — d’inventions et de découvertes injustement spoliées. Le numérique joue ici un rôle
+                    central : les
+                    plateformes ouvertes permettent de diffuser largement ces savoirs réhabilités, tandis que les
+                    réseaux sociaux deviennent
+                    des espaces de transmission et de reconnaissance. La création et le développement du secteur du
+                    cinéma et des séries
+                    permettent de mettre en lumière certain cas important. Vous retrouverez ci-dessous une galerie de
+                    film et de série
                     retraçant, des histoires de femmes invisibilisés
                 </p>
-            </section>
+            </div>
             <button class="article__button">Accédez à la galerie →</button>
-            <section class="article__image-wrapper">
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article5-img1.avif" alt="Chien Shiung Wu">
                 <span class="article__image-text">Affiche du documentaire Picture a scientist</span>
-            </section>
-            <section class="article__content">
+            </div>
+            <div class="article__content">
                 <p class="article__text">
-                    Le documentaire Picture a Scientist en est un exemple marquant : diffusé sur plusieurs plateformes numériques, il
-                    raconte le parcours de femmes scientifiques confrontées à l’invisibilisation et aux discriminations dans le milieu
-                    académique. Ce film participe pleinement à la réhabilitation des chercheuses en rendant visibles leurs expériences et
-                    leurs contributions. Vous retrouverez ci-dessous une galerie de films et de séries retraçant des histoires de femmes
+                    Le documentaire Picture a Scientist en est un exemple marquant : diffusé sur plusieurs plateformes
+                    numériques, il
+                    raconte le parcours de femmes scientifiques confrontées à l’invisibilisation et aux discriminations
+                    dans le milieu
+                    académique. Ce film participe pleinement à la réhabilitation des chercheuses en rendant visibles
+                    leurs expériences et
+                    leurs contributions. Vous retrouverez ci-dessous une galerie de films et de séries retraçant des
+                    histoires de femmes
                     longtemps oubliées.
                 </p>
                 <p class="article__text">
                     Vous retrouverez ci-dessous le trailer du documentaire :
                 </p>
-                <video class="article__video" src="/assets/video/Picture A Scientist - Official Trailer_1080p.mp4" controls></video>
-            </section>
-            <section class="article__image-wrapper">
+                <video class="article__video" src="/assets/video/trailer.mp4" controls></video>
+            </div>
+            <div class="article__image-wrapper">
                 <img class="article__image" src="/assets/img/img/article5-img2.avif" alt="Chien Shiung Wu">
-                <span class="article__image-text">Portrait de femmes pionnières qui ont marqué l’histoire des sciences et de la technologie.</span>
-            </section>
-            <section class="article__content">
+                <span class="article__image-text">Portrait de femmes pionnières qui ont marqué l’histoire des sciences
+                    et de la technologie.</span>
+            </div>
+            <div class="article__content">
                 <p class="article__text">
-                    Le droit, lui aussi, s’impose comme un nouvel instrument de réparation symbolique. En favorisant des politiques
-                    d’égalité dans la recherche et la publication, il contribue à corriger une histoire écrite au masculin.
+                    Le droit, lui aussi, s’impose comme un nouvel instrument de réparation symbolique. En favorisant des
+                    politiques
+                    d’égalité dans la recherche et la publication, il contribue à corriger une histoire écrite au
+                    masculin.
                 </p>
                 <p class="article__text">
-                    Les lois sur la parité dans les instances scientifiques, les prix réservés aux chercheuses ou la révision des protocoles
+                    Les lois sur la parité dans les instances scientifiques, les prix réservés aux chercheuses ou la
+                    révision des protocoles
                     d’attribution de brevets participent de cette dynamique.
                 </p>
                 <p class="article__text">
-                    Réhabiliter ne consiste plus seulement à redécouvrir des figures oubliées, mais à transformer en profondeur les
+                    Réhabiliter ne consiste plus seulement à redécouvrir des figures oubliées, mais à transformer en
+                    profondeur les
                     mécanismes de la reconnaissance scientifique.
                 </p>
                 <p class="article__text">
-                    En donnant leur juste place aux femmes, la société ne corrige pas seulement une injustice passée : elle enrichit le
+                    En donnant leur juste place aux femmes, la société ne corrige pas seulement une injustice passée :
+                    elle enrichit le
                     présent d’une pluralité de voix, d’expériences et de savoirs essentiels pour penser le futur.
                 </p>
-            </section>
-        </article>
+            </div>
+        </div>
         <a class="arrow-up__link" href="#top">
             <img class="arrow-up__img" src="/assets/img/logo/flèche-haut.svg" alt="fleche qui remonte vers le haut">
         </a>
     </main>
     <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</li>
-            <li class="footer__link" href="/fr/contact.html">CONTACT</li>
-            <li class="footer__link" href="/fr/about.html">À PROPOS</li>
-            <li class="footer__link" href="/fr/contact.html">AUTRES PROJET</li>
+            <li class="footer__link"><a href="/fr/glossaire.html">GLOSSAIRE</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">CONTACT</a></li>
+            <li class="footer__link"><a href="/fr/about.html">À PROPOS</a></li>
+            <li class="footer__link"><a href="/fr/contact.html">AUTRES PROJET</a></li>
         </ul>
         <span class="footer__text">Projet achevé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
             Montbéliard.</span>
-        <address class="footer__contact-detail">
-            <p class="contact-detail__name">Sacha MARTIN</p>
-            <p class="contact-detail__promo">MMI 1 - C1</p>
-            <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
-                sacha.martin03@edu.univ-fcomte.fr
-            </a>
-        </address>
+        <div class="footer__contact-wrapper">
+            <address class="footer__contact-detail">
+                <p class="contact-detail__name">Sacha MARTIN</p>
+                <p class="contact-detail__promo">MMI 1 - C1</p>
+                <a class="contact-detail__mail" href="mailto:sacha.martin03@edu.univ-fcomte.fr">
+                    sacha.martin03@edu.univ-fcomte.fr
+                </a>
+            </address>
+            <img class="contact__logo" src="/assets/img/logo/logo-classic.svg" alt="logo ForParity">
+        </div>
     </footer>
 </body>
 
