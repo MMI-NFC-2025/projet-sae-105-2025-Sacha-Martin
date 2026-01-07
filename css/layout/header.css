@@ -39,9 +39,3 @@
     color: var(--text);
     font-size: 25px;
 }
-
-.header__nav[aria-expanded="true"] .header__logo {
-    opacity: 0;
-    visibility: visible;
-    height: 0;
-}

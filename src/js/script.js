@@ -1,29 +1,16 @@
-const toggle = document.querySelector(".btn-menu__img");
-const menu = document.querySelector(".header__menu");
-const nav = document.querySelector(".header__nav");
+const toggle = document.querySelector('.header__btn-menu');
+const closeBtn = document.querySelector('.header__close');
+const nav = document.querySelector('.menu');
 const page = document.body;
-console.log(toggle, menu)
-if (toggle && menu) {
-    toggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        const isOpen = toggle.ariaExpanded === "true";
-        const isClosed = !isOpen;
 
+console.log(toggle, closeBtn, nav, page);
 
-        toggle.ariaExpanded = isClosed ? "true" : "false";
-        nav.ariaExpanded = isClosed ? "true" : "false";
-        menu.ariaHidden = isOpen ? "true" : "false";
-        logo.classList.toggle("header__logo--extend", isClosed);
-        page.classList.toggle("u-noscroll", isClosed);
-    });
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    page.classList.toggle('no-scroll');
+});
 
-    const menuLinks = menu.querySelectorAll('.menu__link');
-    menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            toggle.ariaExpanded = "false";
-            nav.ariaExpanded = "false";
-            menu.ariaHidden = "true";
-            page.classList.remove("u-noscroll");
-       });
-    });
-}
+closeBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    page.classList.toggle('no-scroll');
+});

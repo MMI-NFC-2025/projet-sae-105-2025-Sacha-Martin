@@ -215,3 +215,14 @@
     font-weight: 400;
     border: none;
 }
+
+.article__timeline{
+    margin : 0;
+    width: 74%;
+    border-left: 3px;
+    border-color: antiquewhite;
+}
+
+.timeline__item{
+    display: flex;
+}
