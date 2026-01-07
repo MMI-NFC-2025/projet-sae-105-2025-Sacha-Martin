@@ -122,7 +122,7 @@
 }
 
 .glossaire__list {
-    margin-inline: var(--space-l);
+    margin-inline: var(--space-xs);
 }
 
 .list__title {

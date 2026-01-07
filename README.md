@@ -3,8 +3,9 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Martin
+- PRÉNOM : Sacha
+- GROUPE : C1
+- URL du site : https://for-parity.sacha-martin.fr/
+- URL FIGMA : https://www.figma.com/design/FiX7jFoFRWqjX0ZJ1vc8bS/Maquettes-projet-individuel-%E2%80%94-Sacha-MARTIN?node-id=3701-115&t=TiCBVbBChiSRknX4-1
+ 
