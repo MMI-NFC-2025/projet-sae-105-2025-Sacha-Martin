@@ -41,18 +41,18 @@
 .menu__link {
     color: var(--white);
     text-decoration: none;
-    width: 48%;
+    width: 30%;
 }
 
 .menu__list {
-    gap: var(--space-l);
+    gap: var(--space-m);
     font-size: var(--title1);
     margin-bottom: 200px;
 }
 
 .menu__item {
     margin-bottom: 25px;
-    width: 78%;
+    width: 68%;
 }
 
 .no-scroll{
